@@ -1,0 +1,65 @@
+/* Used for guidelines with boxes */
+
+** {
+    border: 1px solid black;
+}
+
+html, body {
+    height: 100%;
+    width: 960px;
+    margin: 0px auto;
+}
+
+body {
+    background-color: #c5c5c5;
+    padding-left: 55px;
+}
+
+header {
+    color: #4aaaa5;
+}
+
+header, .nav .me {
+    padding-left: 60px;
+}
+
+.nav {
+    background-color: #ffffff;
+    overflow: auto;
+    margin-bottom: 25px;
+}
+
+.nav a, .me {
+    text-decoration: none;
+}
+
+.container {
+    background-color: #ffffff;
+    overflow: auto;
+    clear: both;
+}
+
+.nav .me {
+    float: left;
+    font-size: 48px;
+}
+
+.top-nav-right {
+    float: right;
+    padding: 24px 0;
+    color: #666666;
+}
+
+.top-nav-right a {
+    padding-left: 25px;
+}
+
+.about_me_image {
+    float: left;
+    margin: 5px;
+}
+
+.about_me p {
+    font-size: 14px;
+    line-height: 30px;
+}
