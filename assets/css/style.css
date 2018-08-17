@@ -1,65 +1,175 @@
-/* Used for guidelines with boxes */
+/* Border help 
+    *{
+        border: 1px solid black;
+    }
+*/
 
-** {
-    border: 1px solid black;
-}
-
-html, body {
+body{
+    margin: 0px;
     height: 100%;
+}
+
+.topheader {
+    border-bottom: 1px solid #cccccc;
+}
+
+.page-content, .navi {
     width: 960px;
-    margin: 0px auto;
+    margin: auto;
 }
 
-body {
-    background-color: #c5c5c5;
-    padding-left: 55px;
+footer {
+    text-align: center;
+    font-size: 10px;
+    border-top: 5px solid teal;
+    color: #ffffff;
+    background-color: #666666;
+    padding-top: 15px;
 }
 
-header {
-    color: #4aaaa5;
-}
+/* ****************** */
+/* Navigation Styling */
+/* ****************** */
 
-header, .nav .me {
-    padding-left: 60px;
-}
-
-.nav {
-    background-color: #ffffff;
+.navi {
     overflow: auto;
-    margin-bottom: 25px;
+    margin-top: 25px;
 }
 
-.nav a, .me {
+.navi a {
     text-decoration: none;
 }
 
-.container {
+.navi a:hover {
+    color: teal;
+}
+
+.name {
+    float: left;
+    padding: 20px;
+    background-color: teal;
+    font-size: 36px;
+}
+
+.name:hover {
     background-color: #ffffff;
-    overflow: auto;
-    clear: both;
 }
 
-.nav .me {
-    float: left;
-    font-size: 48px;
+.name:hover > a {
+    color: teal;
 }
 
-.top-nav-right {
+.name > a {
+    color: #ffffff;
+}
+
+nav {
     float: right;
-    padding: 24px 0;
+    margin-top: 36px;
+}
+
+nav a {
     color: #666666;
+    margin: 0 15px;
 }
 
-.top-nav-right a {
-    padding-left: 25px;
+/* ****************** */
+/* Main Page Styling  */
+/* ****************** */
+
+
+.background {
+    background-image: url(http://cdn.backgroundhost.com/backgrounds/subtlepatterns/beige_paper.png);
+    padding: 30px;
+    height: 100%;
 }
 
-.about_me_image {
+.page-content {
+    background-color: #ffffff;
+    border: 2px solid #dddddd;
+}
+
+.page-content > header {
+    color: teal;
+    font-size: 36px;
+}
+
+.page-content > * {
+    padding: 20px;
+}
+
+img {
     float: left;
-    margin: 5px;
+    height:  200px;
+    width: 200px;
+    border-radius: 50%;
+    transform: rotate(90deg);
 }
 
-.about_me p {
-    font-size: 14px;
-    line-height: 30px;
+/* ****************** */
+/* Contact  Styling   */
+/* ****************** */
+
+input, textarea {
+    box-sizing: content-box;
+    width: 100%;
+    margin: 8px auto;
+    min-height: 14px;
+}
+
+textarea {
+    min-height: 200px;
+}
+
+button {
+    height: 30px;
+    width: 100px;
+    background-color: teal;
+    color: #ffffff;
+    padding: 5px;
+    text-align: center;
+}
+
+/* ****************** */
+/* Portfolio Styling  */
+/* ****************** */
+
+.portfolio-content {
+    overflow: auto;
+}
+
+.portfolio-project {
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    float: left;
+    margin: 60px;
+}
+
+.project-banner {
+    margin-top: 80%;
+    background-color: teal;
+    padding: 5px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.pj1 {
+    background: url(../images/bigcity.jpg)
+}
+
+.pj2 {
+    background: url(../images/foodproject.jpg)
+}
+
+.pj3 {
+    background: url(../images/oceanproject.jpg)
+}
+
+.pj4 {
+    background: url(../images/piggyproject.jpg)
+}
+
+.pj5 {
+    background: url(../images/rhino.jpg)
 }
